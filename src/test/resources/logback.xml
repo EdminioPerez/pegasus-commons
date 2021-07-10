@@ -3,7 +3,7 @@
 	<statusListener class="ch.qos.logback.core.status.NopStatusListener" />
 
     <contextName>pegasus-commons</contextName>
-    
+
 	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
       		<pattern>%-4relative [%thread] %contextName %-5level %logger{35} - %msg %n</pattern>
