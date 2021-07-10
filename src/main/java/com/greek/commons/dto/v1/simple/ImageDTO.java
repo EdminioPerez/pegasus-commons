@@ -13,6 +13,6 @@ public class ImageDTO implements Serializable {
 
 	private static final long serialVersionUID = -7872870662803782075L;
 
-	private final String filePath = null;
+	private final String filePath;
 
 }
