@@ -3,6 +3,7 @@ package com.greek.commons.dto.v1.person;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -10,7 +11,6 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import com.greek.commons.annotations.ExtendedEmailValidator;
 import com.gvt.core.domain.types.Identificable;
 import com.gvt.core.domain.types.VersionableDTO;
 
@@ -52,7 +52,7 @@ public class PersonDTO implements Identificable, VersionableDTO, Serializable {
 	@Size(max = 32)
 	private String homePhone;
 
-	@ExtendedEmailValidator
+	@Email
 	@Size(max = 64)
 	private String email;
 
