@@ -9,16 +9,13 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import com.gvt.core.domain.types.Identificable;
-import com.gvt.core.domain.types.VersionableDTO;
+import com.gvt.core.domain.types.VersionableDto;
 
 import lombok.Data;
 
-@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 @Data
-public class PersonDTO implements Identificable, VersionableDTO, Serializable {
+public class PersonDto implements Identificable, VersionableDto, Serializable {
 
 	private static final long serialVersionUID = -8293952137314357678L;
 

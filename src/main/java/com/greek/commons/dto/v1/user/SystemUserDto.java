@@ -2,16 +2,13 @@ package com.greek.commons.dto.v1.user;
 
 import java.io.Serializable;
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import com.gvt.core.domain.types.Identificable;
-import com.gvt.core.domain.types.VersionableDTO;
+import com.gvt.core.domain.types.VersionableDto;
 
 import lombok.Data;
 
-@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 @Data
-public class SystemUserDTO implements Identificable, VersionableDTO, Serializable {
+public class SystemUserDto implements Identificable, VersionableDto, Serializable {
 
 	private static final long serialVersionUID = -6229937870090738715L;
 
