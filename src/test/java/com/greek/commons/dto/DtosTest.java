@@ -16,8 +16,8 @@ public class DtosTest {
     @Test
     public void should_pass_all_pojo_tests() {
         // given
-        final Class<PersonListDto> personListDto = PersonListDto.class;
         final Class<PersonDto> personDto = PersonDto.class;
+        final Class<PersonListDto> personListDto = PersonListDto.class;
         final Class<ImageDto> imageDto = ImageDto.class;
         final Class<SimpleDto> simpleDto = SimpleDto.class;
         final Class<ClientDto> clientDto = ClientDto.class;
